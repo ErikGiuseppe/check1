@@ -11,6 +11,7 @@ app.use(function(req, res, next) {
     next();
 });
 const mongoose = require('mongoose')
+//colocar o ip da maquina
 mongoose.connect(`mongodb://192.168.68.52:27017/mydase`)
 
 require('./models/produto')
